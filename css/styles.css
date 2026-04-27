@@ -164,7 +164,8 @@ body {
   display: block;
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  border-radius: none;
+  border-radius: 50px;
+  border-right: none;
   color: #fff;
   font-weight: 700;
   font-size: 30px;
