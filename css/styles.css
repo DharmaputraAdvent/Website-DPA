@@ -4191,6 +4191,622 @@ textarea.form-control-lg {
     padding: 0;
     overflow-y: visible;
   }
+  #contact {
+    padding: 70px 0;
+}
+
+.contact-content h2 {
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.contact-content p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.contact-item h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.map-container {
+    width: 100%;
+    height: 320px; /* lebih kecil */
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    #contact {
+        padding: 50px 0;
+    }
+
+    .contact-content {
+        text-align: center;
+    }
+
+    .contact-content h2 {
+        font-size: 32px;
+    }
+
+    .map-container {
+        height: 280px;
+        margin-top: 10px;
+    }
+}
+
+/* Handphone */
+@media (max-width: 576px) {
+    #contact {
+        padding: 40px 0;
+    }
+
+    .contact-content h2 {
+        font-size: 26px;
+    }
+
+    .contact-content p {
+        font-size: 14px;
+    }
+
+    .contact-item h5 {
+        font-size: 15px;
+    }
+
+    .map-container {
+        height: 230px;
+        border-radius: 14px;
+    }
+
+    .row.g-5 {
+        --bs-gutter-y: 1.5rem;
+    }
+}
+
+/* =========================================
+   PENDAFTARAN SECTION
+========================================= */
+
+#pendaftaran {
+    padding: 90px 0;
+    background: linear-gradient(
+        to bottom,
+        #f8f9fa,
+        #ffffff
+    );
+    overflow: hidden;
+}
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #212529;
+}
+
+.section-title p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #6c757d;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.pendaftaran-card {
+
+    position: relative;
+
+    background: #fff;
+
+    padding: 40px 30px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    transition: all 0.4s ease;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* HOVER */
+.pendaftaran-card:hover {
+    transform: translateY(-10px);
+}
+
+/* BACKGROUND EFFECT */
+.pendaftaran-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 140px;
+    height: 140px;
+
+    background: rgba(13,110,253,0.05);
+
+    border-radius: 50%;
+
+    top: -50px;
+    right: -50px;
+
+    transition: 0.4s ease;
+}
+
+.pendaftaran-card:hover::before {
+    transform: scale(1.4);
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.icon-wrapper {
+
+    position: relative;
+
+    width: 90px;
+    height: 90px;
+
+    margin: auto;
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #0d6efd,
+        #4da3ff
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.4s ease;
+
+    box-shadow:
+        0 10px 25px rgba(13,110,253,0.25),
+        0 0 20px rgba(13,110,253,0.18);
+}
+
+/* DASHED ANIMATION */
+.icon-wrapper::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -8px;
+
+    border-radius: 50%;
+
+    border: 2px dashed rgba(13,110,253,0.2);
+
+    animation: rotateIcon 10s linear infinite;
+}
+
+@keyframes rotateIcon {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.icon-wrapper i {
+    color: white;
+    font-size: 34px;
+    z-index: 2;
+}
+
+.pendaftaran-card:hover .icon-wrapper {
+    transform: scale(1.08);
+}
+
+/* ========================================
+   VISI MISI TUJUAN
+======================================== */
+
+#services {
+    background: #f8f9fa;
+}
+
+.section-heading {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    color: #222;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 24px;
+    height: 100%;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.service-icon {
+    margin-bottom: 20px;
+}
+
+.service-card h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+}
+
+.service-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.mission-text p {
+    margin-bottom: 12px;
+}
+
+/* ========================================
+   RESPONSIVE TABLET
+======================================== */
+
+@media (max-width: 768px) {
+
+    .section-heading {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .service-card {
+        padding: 35px 25px;
+    }
+
+    .service-card h4 {
+        font-size: 24px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE MOBILE
+======================================== */
+
+@media (max-width: 576px) {
+
+    #services {
+        padding: 70px 0;
+    }
+
+    .section-heading {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .service-card h4 {
+        font-size: 22px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .service-icon .fa-stack {
+        font-size: 3rem;
+    }
+}
+
+/* =========================================
+   CARD TEXT
+========================================= */
+
+.pendaftaran-card h4 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+    color: #212529;
+}
+
+.pendaftaran-card p {
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 0;
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.img-biaya-wrapper {
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.15);
+}
+
+.img-biaya-wrapper img {
+
+    width: 100%;
+
+    transition: 0.4s ease;
+}
+
+.img-biaya-wrapper:hover img {
+    transform: scale(1.03);
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.pendaftaran-content h3 {
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    margin-bottom: 18px;
+
+    color: #212529;
+}
+
+.pendaftaran-content p {
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.daftar-btn {
+
+    padding: 14px 35px;
+
+    border-radius: 50px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    border: none;
+
+    background: linear-gradient(
+        135deg,
+        #0d6efd,
+        #4da3ff
+    );
+
+    box-shadow:
+        0 10px 25px rgba(13,110,253,0.25);
+
+    transition: 0.3s ease;
+}
+
+.daftar-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    #pendaftaran {
+        padding: 70px 0;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+    .pendaftaran-card {
+        padding: 35px 25px;
+    }
+
+    .pendaftaran-content {
+        text-align: center;
+    }
+
+    .img-biaya-wrapper {
+        margin-bottom: 10px;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    #pendaftaran {
+        padding: 55px 0;
+    }
+
+    .container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .row.g-4 {
+        --bs-gutter-y: 1.5rem;
+    }
+
+    /* TITLE */
+    .section-title h2 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .section-title p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* CARD */
+    .pendaftaran-card {
+
+        padding: 30px 22px;
+
+        border-radius: 20px;
+
+        box-shadow:
+            0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .pendaftaran-card:hover {
+        transform: none;
+    }
+
+    /* ICON */
+    .icon-wrapper {
+
+        width: 75px;
+        height: 75px;
+
+        margin-bottom: 20px;
+    }
+
+    .icon-wrapper::after {
+        inset: -6px;
+    }
+
+    .icon-wrapper i {
+        font-size: 28px;
+    }
+
+    /* TEXT */
+    .pendaftaran-card h4 {
+        font-size: 20px;
+    }
+
+    .pendaftaran-card p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* IMAGE */
+    .img-biaya-wrapper {
+        border-radius: 18px;
+    }
+
+    /* CONTENT */
+    .pendaftaran-content {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .pendaftaran-content h3 {
+        font-size: 26px;
+    }
+
+    .pendaftaran-content p {
+        font-size: 14px;
+    }
+
+    /* BUTTON */
+    .daftar-btn {
+
+        width: 100%;
+
+        padding: 13px;
+
+        font-size: 15px;
+    }
+}
+
+/* =========================================
+   SMALL PHONE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .pendaftaran-card {
+        padding: 25px 18px;
+    }
+
+    .icon-wrapper {
+        width: 65px;
+        height: 65px;
+    }
+
+    .icon-wrapper i {
+        font-size: 24px;
+    }
+
+    .pendaftaran-card h4 {
+        font-size: 18px;
+    }
+
+    .pendaftaran-card p {
+        font-size: 13px;
+    }
+
+    .pendaftaran-content h3 {
+        font-size: 22px;
+    }
+}
+
 }
 .navbar-expand {
   flex-wrap: nowrap;
