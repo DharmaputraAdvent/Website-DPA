@@ -558,7 +558,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">&copy; Dharma Putra Advent 2026</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/dharmaputraadvent.official/" 
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/felix_parhusip/" 
                         aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/dharmaputra.advent.7"
                          aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -824,5 +824,43 @@
     //        window.open(url);
     // } 
         </script>
+
+    <script>
+    /* Navbar berubah saat scroll */
+    window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("mainNav");
+
+        if (window.scrollY > 50) {
+            navbar.classList.add("navbar-scrolled");
+        } else {
+            navbar.classList.remove("navbar-scrolled");
+        }
+    });
+
+    /* Animasi muncul saat elemen masuk layar */
+    const revealElements = document.querySelectorAll(
+        ".service-card, .portfolio-item, .pendaftaran-card, .timeline-panel, .team-member, .contact-item"
+    );
+
+    revealElements.forEach(function (element) {
+        element.classList.add("reveal");
+    });
+
+    function revealOnScroll() {
+        revealElements.forEach(function (element) {
+            const windowHeight = window.innerHeight;
+            const elementTop = element.getBoundingClientRect().top;
+
+            if (elementTop < windowHeight - 100) {
+                element.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+
+    revealOnScroll();
+</script>
+
     </body>
 </html>
